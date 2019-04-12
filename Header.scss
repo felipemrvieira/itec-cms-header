@@ -1,0 +1,223 @@
+@font-face {
+    font-family: "opensans-bold";
+    src: url("./assets/fonts/opensans-bold-webfont.ttf");
+  }
+  
+  @font-face {
+    font-family: "opensans-light";
+    src: url("./assets/fonts/opensans-light-webfont.ttf");
+  }
+  
+  @font-face {
+    font-family: "open sans";
+    src: url("./assets/fonts/opensans.woff2");
+  }
+
+    @font-face {
+        font-family: "gothan-ultra";
+        font-display: auto;
+        src: url("./assets/fonts/Gotham-Font/Gotham-Ultra.otf");
+    }
+
+    @font-face {
+        font-family: "gothan-black";
+        font-display: auto;
+        src: url("./assets/fonts/Gotham-Font/Gotham-Black.otf");
+    }
+
+   @font-face {
+        font-family: 'gothan-light';
+        font-display: auto;
+        src: url('./assets/fonts/Gotham-Font/Gotham-Light.otf');
+    }
+
+@media only screen and (min-width: 900px) {
+    
+    .container{
+        max-width: 1000px;       
+        display: flex;
+        flex-direction: row;
+    }
+
+    header{
+        background: url(./assets/header_bg.png);
+        padding-top: 15px;
+        padding-bottom: 15px;
+        .header-container{
+            color: white;
+            justify-content: space-between;
+            .titulo{
+                text-transform: uppercase;
+                align-self: center;
+            }
+            .orgao{
+                align-self: center;
+                .orgao-titulo{
+                    text-transform: uppercase;
+                    margin: 0;
+                    font-size: 25px;
+                    font-family: "gothan-black";
+                }
+                .orgao-descricao{
+                    margin: 0;
+                    font-size: 16px;
+                    font-weight: 300;
+                    line-height: 105%;
+                    font-family: 'gothan-light';
+                }
+            }
+            .busca{
+                align-self: center;
+                #busca-principal{
+                    width: 200px;
+                    background: #F8F7F7 url(./assets/sprites-geral.png) no-repeat;
+                    background-position: 90% 50%;
+                    border: none;
+                    padding: 4px 40px 4px 10px;
+                    height: 32px;
+                    border-radius: 0;
+                    font-size: 0.8em;
+                    font-weight: normal;
+                    letter-spacing: 0.8px;
+                    color: #5f5f5f;
+                    font-family: 'Open Sans',Helvetica,Arial,Sans-Serif;
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+
+
+@media only screen and (max-width: 900px) {
+    
+    .container{
+        max-width: 1000px;       
+        display: flex;
+        flex-direction: row;
+    }
+
+    header{
+        background: url(./assets/header_bg.png);
+        padding-top: 15px;
+        padding-bottom: 15px;
+        .header-container{
+            color: white;
+            justify-content: space-between;
+            .titulo{
+                text-transform: uppercase;
+                align-self: center;
+            }
+            .orgao{
+                align-self: center;
+                padding: 0 15px;
+                .orgao-titulo{
+                    text-transform: uppercase;
+                    margin: 0;
+                    font-size: 20px;
+                    font-family: 'opensans-bold';
+                }
+                .orgao-descricao{
+                    margin: 0;
+                    font-size: 13.5px;
+                    font-weight: 300;
+                    line-height: 105%;
+                    font-family: 'Open Sans',Helvetica,Arial,Sans-Serif;
+                }
+            }
+            .busca{
+                align-self: center;
+                #busca-principal{
+                    width: 150px;
+                    background: #F8F7F7 url(./assets/sprites-geral.png) no-repeat;
+                    background-position: 90% 50%;
+                    border: none;
+                    padding: 4px 35px 4px 10px;
+                    height: 32px;
+                    border-radius: 0;
+                    font-size: 0.8em;
+                    font-weight: normal;
+                    letter-spacing: 0.8px;
+                    color: #5f5f5f;
+                    font-family: 'Open Sans',Helvetica,Arial,Sans-Serif;
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+
+
+// Tela pequena
+@media only screen and (max-width: 600px) {
+    
+    .container{
+        max-width: 1000px;       
+        display: flex;
+        flex-direction: column;
+    }
+
+    header{
+        background: url(./assets/header_bg.png);
+        padding-top: 15px;
+        padding-bottom: 15px;
+        .header-container{
+            color: white;
+            justify-content: space-between;
+            .titulo{
+                text-transform: uppercase;
+                align-self: center;
+                margin-bottom: 10px;
+            }
+            .orgao{
+                align-self: center;
+                padding: 0 15px;
+                .orgao-titulo{
+                    text-transform: uppercase;
+                    margin: 0;
+                    font-size: 18px;
+                    font-family: 'opensans-bold';
+                    text-align: center;
+                }
+                .orgao-descricao{
+                    margin: 0;
+                    font-size: 11.5px;
+                    font-weight: 300;
+                    line-height: 105%;
+                    font-family: 'Open Sans',Helvetica,Arial,Sans-Serif;
+                    text-align: center;
+                }
+            }
+            .busca{
+                align-self: center;
+                display: none;
+                #busca-principal{
+                    width: 150px;
+                    background: #F8F7F7 url(./assets/sprites-geral.png) no-repeat;
+                    background-position: 90% 50%;
+                    border: none;
+                    padding: 4px 35px 4px 10px;
+                    height: 32px;
+                    border-radius: 0;
+                    font-size: 0.8em;
+                    font-weight: normal;
+                    letter-spacing: 0.8px;
+                    color: #5f5f5f;
+                    font-family: 'Open Sans',Helvetica,Arial,Sans-Serif;
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+
+        }
+    }
+}
